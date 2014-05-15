@@ -1,0 +1,14 @@
+*.iml
+*.log
+*.ipr
+*.iws
+*.swp
+.classpath
+*.out
+out/
+target/
+test/
+.idea/
+.settings/
+web-app/WEB-INF/classes/
+web-app/uploads/
