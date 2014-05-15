@@ -8,7 +8,8 @@
 out/
 target/
 test/
-.idea/
+.idea
+.idea/workspace.xml
 .settings/
 web-app/WEB-INF/classes/
 web-app/uploads/
