@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css">
     <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery-1.9.1.js')}"></script>
     <script type="text/javascript" src="${resource(dir: 'js', file: 'jquery.form.min.js')}"></script>
+    <script type="text/javascript" src="${resource(dir: 'js', file: 'custom.js')}"></script>
     <g:layoutHead/>
     <g:javascript library="application"/>
     <r:layoutResources/>
