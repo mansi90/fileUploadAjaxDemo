@@ -26,8 +26,9 @@ function submitForm(formObj, url) {
         async: true,
         url: url,
         success: function (data) {
+            emptyFileInputField(formObj);  //reset and hide input file info
+            $(formObj).trigger("reset");   //reset other form elements
             alert('Form submitted successfully');
-            $(formObj).get(0).reset()
         }
     });
 }
