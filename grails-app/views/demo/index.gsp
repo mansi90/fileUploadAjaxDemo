@@ -7,60 +7,60 @@
 
 <body>
 
-    <g:form style="margin:40px">
-        <div class="regular margin-t10">
-            <label for="name">
-                <strong>Name</strong>
-            </label>
-            <input id="name" name="fullName" type="text" class="w250"/>
-        </div>
+<g:form id="demoForm" style="margin:40px">
+    <div class="regular margin-t10">
+        <label for="name">
+            <strong>Name</strong>
+        </label>
+        <input id="name" name="fullName" type="text" class="w250"/>
+    </div>
 
 
-        <div class="regular margin-t10 cfx">
-            <div class="inline">
-                <label for="email" class="labelWithInputRadioOrCheckbox">
-                    <strong>Email</strong>
-                </label>
-
-                <input id="email" name="email" type="text" class="w250"/>
-            </div>
-        </div>
-
-        <div class="regular margin-t10 cfx">
-            <div class="inline">
-                <label for="phone">
-                    <strong>Phone</strong>
-                </label>
-
-                <input id="phone" name="phone" type="text" class="w150" maxlength="12"/>
-            </div>
-        </div>
-
-        <div class="regular margin-t10">
-            <label>
-                <strong>Attach File:</strong>
+    <div class="regular margin-t10 cfx">
+        <div class="inline">
+            <label for="email" class="labelWithInputRadioOrCheckbox">
+                <strong>Email</strong>
             </label>
 
-
-            <input type="file" name="xfile" id="xfile_3_2" src="" class="xfile"
-                   onchange="showFileAsAttachment(this, $(this).closest('form'))">
+            <input id="email" name="email" type="text" class="w250"/>
         </div>
+    </div>
 
-        <div id="attachment-results" class="attachment-results regular" style="display: none">
-            <div class="regular">
-                <span></span>
-                <a href="javascript:void(0)" class="padding-l10 text-red"
-                   onclick="emptyFileInputField($(this).closest('form'))">Remove</a>
-            </div>
-        </div>
+    <div class="regular margin-t10 cfx">
+        <div class="inline">
+            <label for="phone">
+                <strong>Phone</strong>
+            </label>
 
-        <div style="margin-left: 13px;margin-top: 30px;">
-            <a href="javascript:void(0)"
-               onclick="submitBillingIssues($(this).closest('form'), linkToSubmitRequestTaxExemptionUrl, $('#billing_3_2-result'));
-               return false;" class="btn btn-primary">
-                submit
-            </a>
+            <input id="phone" name="phone" type="text" class="w150" maxlength="12"/>
         </div>
-    </g:form>
+    </div>
+
+    <div class="regular margin-t10">
+        <label>
+            <strong>Attach File:</strong>
+        </label>
+
+
+        <input type="file" name="xfile" id="xfile_3_2" src="" class="xfile"
+               onchange="showFileAsAttachment(this, $(this).closest('form'))">
+    </div>
+
+    <div id="attachment-results" class="attachment-results regular" style="display: none">
+        <div class="regular">
+            <span></span>
+            <a href="javascript:void(0)" class="padding-l10 text-red"
+               onclick="emptyFileInputField($(this).closest('form'))">Remove</a>
+        </div>
+    </div>
+
+    <div style="margin-left: 13px;margin-top: 30px;">
+        <a href="javascript:void(0)"
+           onclick="submitForm($(this).closest('form'), $('#attachment-results'));
+           return false;" class="btn btn-primary">
+            Submit
+        </a>
+    </div>
+</g:form>
 </body>
 </html>
