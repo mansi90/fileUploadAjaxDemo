@@ -10,8 +10,7 @@ class DemoController {
     def submitDemoForm() {
         // you can do anything with your file and data, like upload it, etc.
         if (!params.inputFile?.isEmpty()) {
-            def file = params.inputFile
-            MultipartFile multipartFile = file
+            MultipartFile multipartFile = params.inputFile
             println(multipartFile?.originalFilename)
         }
         render([] as JSON)
